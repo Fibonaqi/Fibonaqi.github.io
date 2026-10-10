@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cyberjuglans · 赛博核桃</title>
+  <meta name="description" content="cyberjuglans（赛博核桃）—— 多行业策划者，追求效率、严谨与方法论，把新奇想法通过 GitHub 分享出去。" />
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --surface: #ffffff;
+      --ink: #1c1c1e;
+      --muted: #6b6b70;
+      --line: #e7e5df;
+      --accent: #b5651d;
+      --accent-soft: #f3e7d8;
+      --radius: 14px;
+      --maxw: 760px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    header.hero {
+      padding: 96px 0 64px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.12;
+      margin: 0 0 12px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    h1 .alias { color: var(--accent); }
+    .lede {
+      font-size: clamp(16px, 2.4vw, 19px);
+      color: var(--muted);
+      max-width: 60ch;
+      margin: 0;
+    }
+    section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--accent); flex: none;
+    }
+    p { margin: 0 0 16px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 17px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    @media (min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+    ul.principles { list-style: none; padding: 0; margin: 0; }
+    ul.principles li {
+      padding: 12px 0 12px 28px;
+      position: relative;
+      border-bottom: 1px dashed var(--line);
+    }
+    ul.principles li:last-child { border-bottom: none; }
+    ul.principles li::before {
+      content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--ink); color: #fff;
+      padding: 12px 20px; border-radius: 999px;
+      font-size: 15px; font-weight: 600; margin-top: 8px;
+    }
+    .cta:hover { background: #000; text-decoration: none; }
+    footer {
+      padding: 40px 0 64px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">个人主页 · Personal Site</span>
+      <h1>cyberjuglans<br /><span class="alias">赛博核桃</span></h1>
+      <p class="lede">
+        多行业策划者。追求效率与严谨，痴迷方法论，脑子里装着无数新奇想法。
+        我借 GitHub 这个载体把想法分享出去——只要它们能为别人带来一丁点启发，我就很开心。
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2><span class="dot"></span>关于我</h2>
+      <p>
+        我是 <strong>cyberjuglans</strong>，朋友们也叫我 <strong>赛博核桃</strong>。
+        我从事于<strong>多行业的策划行业</strong>——在不同领域之间穿梭，把复杂的现实问题拆成可执行的方案。
+      </p>
+      <p>
+        我的底色是两种看似矛盾却彼此成就的特质：一方面<strong>追求效率与严谨</strong>，
+        另一方面又<strong>停不下来地冒出新奇想法</strong>。把它们粘在一起的，是我对
+        <strong>方法论</strong>的执着——好的方法能让灵感落地，也能让严谨不沦为枯燥。
+      </p>
+    </section>
+
+    <section id="principles">
+      <h2><span class="dot"></span>我怎么工作</h2>
+      <ul class="principles">
+        <li><strong>效率优先：</strong>用更少的动作抵达结果，拒绝无意义的重复劳动。</li>
+        <li><strong>严谨兜底：</strong>想法可以天马行空，落地必须逻辑闭环、经得起推敲。</li>
+        <li><strong>方法论驱动：</strong>把每次成功与失败沉淀成可复用的套路，而不是一次性灵感。</li>
+        <li><strong>想法即资产：</strong>再小的念头也值得被记录、被分享、被别人借用。</li>
+      </ul>
+    </section>
+
+    <section id="ideas">
+      <h2><span class="dot"></span>我的想法</h2>
+      <p>
+        我相信<strong>分享本身就是一种杠杆</strong>。我把策划中沉淀的方法、实验性的点子，
+        以及那些「也许有用」的小工具，通通放进 GitHub 仓库里。它们未必完美，但每一份都希望
+        能成为某个人眼中的一束光。
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>方法沉淀</h3>
+          <p>跨行业策划中验证过的框架与流程，写成可复用的文档。</p>
+        </div>
+        <div class="card">
+          <h3>实验点子</h3>
+          <p>还没完全成形的新奇构想，先公开、先迭代、先被看见。</p>
+        </div>
+        <div class="card">
+          <h3>小工具</h3>
+          <p>为解决自己的效率痛点而写的小脚本与项目。</p>
+        </div>
+        <div class="card">
+          <h3>思考笔记</h3>
+          <p>关于效率、严谨与创造之间张力的长想法。</p>
+        </div>
+      </div>
+      <a class="cta" href="https://github.com/cyberjuglans" target="_blank" rel="noopener">
+        在 GitHub 上看看 →
+      </a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>
+      由 <span class="mono">cyberjuglans</span> 构建并维护 · 通过 GitHub Pages 发布。
+      如果这里的内容给了你一丁点启发，那便是它存在的全部意义。
+    </p>
+  </footer>
+</body>
+</html>
